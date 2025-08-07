@@ -1,0 +1,152 @@
+.services-wrapper {
+  display: flex;
+  background: #dbdbc2;
+  border: 2px solid #333;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.services-left {
+  flex: 1;
+  min-width: 260px;
+}
+
+.left-box {
+  background: #dbdbc2;
+  border: 2px solid #888;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.left-box img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.left-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.left-box p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Right Section */
+.services-right {
+  flex: 2;
+  min-width: 260px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-item {
+  background: #dbdbc2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  border-color: #111;
+}
+
+.service-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* -------------------------- */
+/* 📱 Responsive Styles Below */
+/* -------------------------- */
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-wrapper {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .left-box,
+  .service-item {
+    padding: 20px;
+  }
+
+  .left-box img {
+    width: 70px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .service-item img {
+    width: 50px;
+  }
+
+  .service-item p {
+    font-size: 15px;
+  }
+
+  .left-box h3 {
+    font-size: 20px;
+  }
+
+  .left-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-wrapper {
+    padding: 15px;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-item img {
+    width: 45px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+  }
+
+  .left-box h3 {
+    font-size: 18px;
+  }
+
+  .left-box p {
+    font-size: 13px;
+  }
+}

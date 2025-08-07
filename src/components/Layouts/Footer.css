@@ -1,0 +1,243 @@
+.footer {
+  background-color: #dbdbc2;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Tables Section */
+.footer-tables {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 150px;
+  overflow-x: auto;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+.footer-tables table {
+  background: #fff;
+  color: #070606;
+  border-collapse: collapse;
+  width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.footer-tables th,
+.footer-tables td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.footer-tables thead {
+  background-color: #0e0507;
+  color: white;
+}
+
+.footer-tables tbody tr:nth-child(even) {
+  background-color: #dbdbc2;
+}
+
+.footer-tables tbody tr:nth-child(odd) {
+  background-color: #787874;
+}
+
+.footer-bottom {
+  background-color: #2a002f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #3a003f;
+  padding: 20px;
+  border-top-left-radius: 60px;
+  margin-top: 20px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-bottom h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding-left: 20px;
+  color: #f1f1f1;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+  padding-left: 20px;
+}
+
+/* Social Icons */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.social svg {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social svg:hover {
+  color: #d946ef;
+  transform: scale(1.2);
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 0 40px 0 60px;
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px 12px;
+  margin: 10px 10px;
+  background: #a69ba7;
+  border: 1px solid #3a003f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.contact-form button {
+  background: #d946ef;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.contact-form button:hover {
+  background: #a21caf;
+}
+
+/* -------------------------- */
+/* 📱 Mobile Responsive Below */
+/* -------------------------- */
+@media (max-width: 768px) {
+  .footer-tables {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 10px;
+    overflow-x: visible;
+  }
+
+  .footer-tables table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    border-top-left-radius: 30px;
+    padding: 20px 15px;
+  }
+
+  .footer-bottom > div {
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom h4,
+  .footer-bottom p,
+  .social,
+  .contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .social {
+    justify-content: flex-start;
+  }
+
+  .contact-form {
+    padding: 0 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact-form button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer-tables {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 10px;
+    overflow-x: visible;
+  }
+
+  /* Add wrapper to make tables scrollable */
+  .footer-tables table {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .footer-tables th,
+  .footer-tables td {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .footer-tables thead {
+    display: table-header-group;
+  }
+
+  .footer-tables tbody {
+    display: table-row-group;
+  }
+
+  .footer-tables tr {
+    display: table-row;
+  }
+
+  .footer-tables td,
+  .footer-tables th {
+    display: table-cell;
+  }
+}
