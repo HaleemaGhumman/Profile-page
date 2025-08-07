@@ -3,7 +3,7 @@ import React from "react";
 import Banner from "./components/Banner";
 import Navbar from "./components/Layouts/Navbar";
 import Footer from "./components/Layouts/Footer";
-import Home from './pages/Home.jsx'; // ✅ Capital "H"
+import Home from './Pages/file.jsx'; // ✅ Capital "H"
 
 
 
