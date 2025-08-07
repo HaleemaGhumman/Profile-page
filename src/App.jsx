@@ -3,7 +3,8 @@ import React from "react";
 import Banner from "./components/Banner";
 import Navbar from "./components/Layouts/Navbar";
 import Footer from "./components/Layouts/Footer";
-import Home from './pages/Home.jsx';
+import Home from './pages/home.jsx';
+
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
