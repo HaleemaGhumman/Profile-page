@@ -1,16 +1,16 @@
 
 import React from "react";
-import Banner from "./components/Banner";
-import Navbar from "./components/Layouts/Navbar";
-import Footer from "./components/Layouts/Footer";
-import Home from './Pages/file.jsx'; // ✅ Capital "H"
+import Banner from "./components/Banner.jsx";
+import Navbar from "./components/Layouts/Navbar.jsx";
+import Footer from "./components/Layouts/Footer.jsx";
+import Home from './Pages/file.jsx'; 
 
 
 
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+import About from "./pages/About.jsx";
+import Services from "./pages/Services.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Contact from "./pages/Contact.jsx";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
